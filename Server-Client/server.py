@@ -10,5 +10,5 @@ listen_socket.listen(5)
 while True:
     client_socket, client_address = listen_socket.accept()
     print('Connection to {} established'.format(client_address))
-    client_socket.send(bytes('Hi from Server', 'utf-8'))
+    client_socket.send(bytes('Hi from Server-Client', 'utf-8'))
     client_socket.close()
